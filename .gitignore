@@ -1,0 +1,16 @@
+# Banco de dados local (recriado em runtime, nao versionar)
+*.db
+slashdash.db
+
+# Arquivos de teste/debug
+_*.html
+_*.js
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# OS
+Thumbs.db
+.DS_Store
