@@ -1007,9 +1007,8 @@
                 return fetch(url, {method:method, headers:{'Content-Type':'application/json'}, body: body?JSON.stringify(body):undefined})
                     .then(r=>r.json()).catch(err=>({error:'offline'}));
             },
-            // URL do backend em producao (Railway). Deixe '' para rodar localmente (path relativo).
-            // Exemplo: 'https://big-bang.up.railway.app'
-            API_BASE: '',
+            // URL do backend em producao (Railway)
+            API_BASE: 'https://big-bang-production-fd49.up.railway.app',
             login: function(){
                 const v = (document.getElementById('nickInput').value || '').trim();
                 if(!v){ document.getElementById('nickInput').focus(); return; }
